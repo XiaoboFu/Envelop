@@ -68,6 +68,7 @@ int main(int argc, char *argv[])
 	fclose(fpx);
 
 	vector<Point2D>().swap(pCH);
+        delete concavehull_;
 
 	return 0;
 }
