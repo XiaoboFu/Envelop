@@ -8,11 +8,11 @@ int main(int argc, char *argv[])
 {
 
 	std::vector<Point2D> p;
-	FILE *fpx = fopen("xx.txt", "r");
-	FILE *fpy = fopen("yy.txt", "r");
+	FILE *fpx = fopen("x.txt", "r");
+	FILE *fpy = fopen("y.txt", "r");
 
 
-	for (int i = 0; i < 1267; i++)
+	for (int i = 0; i < 100; i++)
 	{
 		Point2D tmp;
 
@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
 	concavehull_->computeConcaveHull();
 	vector<Point2D> pCH = concavehull_->getConcaveHull();
 
-	pCH.push_back(pCH[0]); // ∞¸¬Á∑‚±’
+	pCH.push_back(pCH[0]); // ¬∞√º√Ç√ßÀá√¢ƒÖ≈ê
 	fpx = fopen("pCH.txt", "w");
 
 	for (int i = 0; i < pCH.size(); i++)
